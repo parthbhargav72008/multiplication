@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function myfun()
+	{
+		var a = document.getElementsById('number').value;
+		var b = document.getElementsById('numbers').value;
+		document.getElementsById('result').innerHTML=(a*b);
+	}
+	function myfun2()
+	{
+		var a = document.getElementsById('number').value;
+		var b = document.getElementsById('numbers').value;
+		document.getElementsById('result').innerHTML=(a/b)
+	}
+</script>
+1st number:
+<input type="number" value="" id="number"><br><br>
+2nd number:
+<input type="number" value="" id="numbers"><br><br>
+<input type="submit" value="multiply" onclick="return myfun()">
+<input type="submit" value="divide" onclick="return myfun2()"><br><br>
+<b> the result is:</b><br><br>
+<span id="result"></span>
+</body>
+</html>
+
+
